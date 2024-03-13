@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pupil Detail</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pupil Detail</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Grade 1</th>
+            <th>Grade 2</th>
+            <th>Grade 3</th>
+        </tr>
+        <tr>
+            <td>{{ pupil.id }}</td>
+            <td>{{ pupil.name }}</td>
+            <td>{{ pupil.grade1 }}</td>
+            <td>{{ pupil.grade2 }}</td>
+            <td>{{ pupil.grade3 }}</td>
+        </tr>
+    </table>
+</body>
+</html>

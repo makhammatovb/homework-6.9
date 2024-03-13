@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pupils List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pupils List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Grade 1</th>
+                <th>Grade 2</th>
+                <th>Grade 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pupil in pupils %}
+            <tr>
+                <td>{{ pupil.name }}</td>
+                <td>{{ pupil.grade1 }}</td>
+                <td>{{ pupil.grade2 }}</td>
+                <td>{{ pupil.grade3 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

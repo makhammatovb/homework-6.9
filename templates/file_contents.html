@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lessons</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .red-line {
+            background-color: red;
+        }
+        .green-line {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lessons List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Line</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for lesson in lessons %}
+            <tr class="{% if lesson.color == 'red' %}red-line{% else %}green-line{% endif %}">
+                <td>{{ lesson.line }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

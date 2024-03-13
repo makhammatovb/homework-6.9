@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        	Learn Django
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <ul>
+        <li><a href="/">Main Page</a></li>
+        <li><a href="{%  url 'about_url' %}">About Page</a></li>
+        <li><a href="{%  url 'contact_url' %}">Contact Page</a></li>
+        <li><a href="{%  url 'months' %}">Months</a></li>
+    </ul>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

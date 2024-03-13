@@ -1,0 +1,8 @@
+1.Flowgorithm
+2.Introduction to Python
+3.Installing Pycharm
+4.Database
+5.Advanced Python
+6.Telegram Bot
+7.Introduction to Django
+8.Project
